@@ -77,7 +77,7 @@ export default function Footer() {
                 >
                   <animate
                     attributeName="y"
-                    dur="15s"
+                    dur="4s"
                     keyTimes="0;0.45;0.46;0.54;0.55;1"
                     repeatCount="indefinite"
                     values="11;11;7;7;11;11"

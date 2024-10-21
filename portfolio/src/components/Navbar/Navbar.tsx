@@ -6,7 +6,7 @@ export default function Navbar() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-gray-800">
-            JD
+            RD
           </Link>
           <ul className="flex space-x-6">
             <li>
@@ -19,15 +19,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="/Inicio"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                Proyectos
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/Inicio"
+                href="/SobreMi"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
               >
                 Sobre mí
@@ -36,6 +28,14 @@ export default function Navbar() {
             <li>
               <Link
                 href="/Inicio"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                Proyectos
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/Contacto"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
               >
                 Contacto
