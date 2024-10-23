@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Send, MessageCircle, Smartphone } from "lucide-react";
+import { Send, Smartphone } from "lucide-react";
 
 const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
