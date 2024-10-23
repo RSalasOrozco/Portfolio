@@ -1,6 +1,11 @@
-import Link from "next/link";
+"use client";
 
-export default function Footer() {
+import Link from "next/link";
+import { FC } from "react";
+
+interface FooterProps {}
+
+const Footer: FC<FooterProps> = () => {
   return (
     <footer className="bg-gray-50">
       <div className="container mx-auto px-6 py-8">
@@ -10,173 +15,71 @@ export default function Footer() {
             derechos reservados.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <a
+            <Link
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="GitHub"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="20"
                 viewBox="0 0 24 24"
-              >
-                <mask id="lineMdGithubLoop0" width="24" height="24" x="0" y="0">
-                  <g fill="#fff">
-                    <ellipse cx="9.5" cy="9" rx="1.5" ry="1" />
-                    <ellipse cx="14.5" cy="9" rx="1.5" ry="1" />
-                  </g>
-                </mask>
-                <g
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeDasharray="32"
-                    strokeDashoffset="32"
-                    d="M12 4c1.67 0 2.61 0.4 3 0.5c0.53 -0.43 1.94 -1.5 3.5 -1.5c0.34 1 0.29 2.22 0 3c0.75 1 1 2 1 3.5c0 2.19 -0.48 3.58 -1.5 4.5c-1.02 0.92 -2.11 1.37 -3.5 1.5c0.65 0.54 0.5 1.87 0.5 2.5c0 0.73 0 3 0 3M12 4c-1.67 0 -2.61 0.4 -3 0.5c-0.53 -0.43 -1.94 -1.5 -3.5 -1.5c-0.34 1 -0.29 2.22 0 3c-0.75 1 -1 2 -1 3.5c0 2.19 0.48 3.58 1.5 4.5c1.02 0.92 2.11 1.37 3.5 1.5c-0.65 0.54 -0.5 1.87 -0.5 2.5c0 0.73 0 3 0 3"
-                  >
-                    <animate
-                      fill="freeze"
-                      attributeName="strokeDashoffset"
-                      dur="1.05s"
-                      values="32;0"
-                    />
-                  </path>
-                  <path
-                    strokeDasharray="10"
-                    strokeDashoffset="10"
-                    d="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5"
-                  >
-                    <animate
-                      attributeName="d"
-                      dur="4.5s"
-                      repeatCount="indefinite"
-                      values="M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5;M9 19c-1.406 0-3-.5-4-.5-.532 0-1 0-2-.5;M9 19c-1.406 0-2.844-.563-3.688-1.188C4.47 17.188 4.22 16.157 3 15.5"
-                    />
-                    <animate
-                      fill="freeze"
-                      attributeName="strokeDashoffset"
-                      begin="1.2s"
-                      dur="0.3s"
-                      values="10;0"
-                    />
-                  </path>
-                </g>
-                <rect
-                  width="8"
-                  height="4"
-                  x="8"
-                  y="11"
-                  fill="currentColor"
-                  mask="url(#lineMdGithubLoop0)"
-                >
-                  <animate
-                    attributeName="y"
-                    dur="4s"
-                    keyTimes="0;0.45;0.46;0.54;0.55;1"
-                    repeatCount="indefinite"
-                    values="11;11;7;7;11;11"
-                  />
-                </rect>
-              </svg>
-              <span className="sr-only">GitHub</span>
-            </a>
-            <a
-              href="https://linkedin.com"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-600 transition-colors"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <circle cx="4" cy="4" r="2" fill="currentColor" fillOpacity="0">
-                  <animate
-                    fill="freeze"
-                    attributeName="fillOpacity"
-                    dur="0.225s"
-                    values="0;1"
-                  />
-                </circle>
-                <g
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="4"
-                >
-                  <path strokeDasharray="12" strokeDashoffset="12" d="M4 10v10">
-                    <animate
-                      fill="freeze"
-                      attributeName="strokeDashoffset"
-                      begin="0.225s"
-                      dur="0.3s"
-                      values="12;0"
-                    />
-                  </path>
-                  <path
-                    strokeDasharray="12"
-                    strokeDashoffset="12"
-                    d="M10 10v10"
-                  >
-                    <animate
-                      fill="freeze"
-                      attributeName="strokeDashoffset"
-                      begin="0.675s"
-                      dur="0.3s"
-                      values="12;0"
-                    />
-                  </path>
-                  <path
-                    strokeDasharray="24"
-                    strokeDashoffset="24"
-                    d="M10 15c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5v5"
-                  >
-                    <animate
-                      fill="freeze"
-                      attributeName="strokeDashoffset"
-                      begin="0.975s"
-                      dur="0.3s"
-                      values="24;0"
-                    />
-                  </path>
-                </g>
-              </svg>
-              <span className="sr-only">LinkedIn</span>
-            </a>
-            <a
-              href="https://twitter.com"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-600 transition-colors"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
+                className="transition-colors"
               >
                 <path
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="m3 21l7.548-7.548M21 3l-7.548 7.548m0 0L8 3H3l7.548 10.452m2.904-2.904L21 21h-5l-5.452-7.548"
-                  color="currentColor"
+                  fill="currentColor"
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10"
                 />
               </svg>
-              <span className="sr-only">Twitter</span>
-            </a>
+            </Link>
+            <Link
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                className="transition-colors"
+              >
+                <path
+                  fill="currentColor"
+                  d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                />
+              </svg>
+            </Link>
+            <Link
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="Twitter"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                className="transition-colors"
+              >
+                <path
+                  fill="currentColor"
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
