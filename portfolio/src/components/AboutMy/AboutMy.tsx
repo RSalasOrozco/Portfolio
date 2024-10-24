@@ -17,9 +17,11 @@ export default function AboutMy() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b text-gray-800 from-gray-50 to-white">
+    <section className="px-4 py-16 bg-gradient-to-b text-gray-800 bg-gray-100 mx-auto ">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">Sobre mí</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+          Sobre mí
+        </h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-600 text-justify">
@@ -68,7 +70,7 @@ export default function AboutMy() {
               <h4 className="text-xl font-semibold mb-2">
                 Innovación Constante
               </h4>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-lg">
                 Siempre estoy al día con las últimas tendencias y tecnologías en
                 desarrollo frontend.
               </p>
@@ -76,7 +78,7 @@ export default function AboutMy() {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <Code className="text-green-500 mb-4" size={32} />
               <h4 className="text-xl font-semibold mb-2">Código Limpio</h4>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-lg">
                 Me enorgullezco de escribir código limpio, eficiente y fácil de
                 mantener.
               </p>
@@ -84,7 +86,7 @@ export default function AboutMy() {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <Rocket className="text-red-500 mb-4" size={32} />
               <h4 className="text-xl font-semibold mb-2">Resultados Rápidos</h4>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-lg">
                 Creo proyectos de alta calidad en tiempos idoneos y sin
                 comprometer la calidad.
               </p>
@@ -99,7 +101,7 @@ export default function AboutMy() {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <Lightbulb className="text-yellow-500 mb-4" size={32} />
               <h4 className="text-xl font-semibold mb-2">Soy HENRY</h4>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-lg">
                 Completé un bootcamp intensivo de desarrollo web full stack, con
                 un enfoque especial en frontend. Adquirí habilidades prácticas
                 en HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, Vite y
@@ -110,7 +112,7 @@ export default function AboutMy() {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <Code className="text-green-500 mb-4" size={32} />
               <h4 className="text-xl font-semibold mb-2">Código Limpio</h4>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-lg">
                 Me enorgullezco de escribir código limpio, eficiente y fácil de
                 mantener.
               </p>
@@ -118,7 +120,7 @@ export default function AboutMy() {
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <Rocket className="text-red-500 mb-4" size={32} />
               <h4 className="text-xl font-semibold mb-2">Resultados Rápidos</h4>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-lg">
                 Creo proyectos de alta calidad en tiempos idoneos y sin
                 comprometer la calidad.
               </p>

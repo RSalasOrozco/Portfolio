@@ -22,7 +22,7 @@ export default function Home() {
         className="text-center"
       >
         <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
-          Rodolfo Desarrollador
+          Rodolfo De Las Salas
         </h1>
         <motion.p
           initial={{ opacity: 0 }}
