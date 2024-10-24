@@ -60,7 +60,7 @@ export default function AboutMy() {
         </div>
         <div className="mt-12">
           <h3 className="text-2xl font-semibold mb-4 text-center">
-            ¿Por qué trabajar conmigo?
+            Le puedo aportar a tu equipo
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -71,6 +71,40 @@ export default function AboutMy() {
               <p className="text-gray-600">
                 Siempre estoy al día con las últimas tendencias y tecnologías en
                 desarrollo frontend.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Code className="text-green-500 mb-4" size={32} />
+              <h4 className="text-xl font-semibold mb-2">Código Limpio</h4>
+              <p className="text-gray-600">
+                Me enorgullezco de escribir código limpio, eficiente y fácil de
+                mantener.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Rocket className="text-red-500 mb-4" size={32} />
+              <h4 className="text-xl font-semibold mb-2">Resultados Rápidos</h4>
+              <p className="text-gray-600">
+                Creo proyectos de alta calidad en tiempos idoneos y sin
+                comprometer la calidad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-12">
+          <h3 className="text-2xl font-semibold mb-4 text-center">
+            Mis estudios y certificaciones
+          </h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Lightbulb className="text-yellow-500 mb-4" size={32} />
+              <h4 className="text-xl font-semibold mb-2">Soy HENRY</h4>
+              <p className="text-gray-600">
+                Completé un bootcamp intensivo de desarrollo web full stack, con
+                un enfoque especial en frontend. Adquirí habilidades prácticas
+                en HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, Vite y
+                Next.js, desarrollando aplicaciones web responsivas, optimizadas
+                y de alto rendimiento.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg">
