@@ -17,7 +17,7 @@ export default function AboutMy() {
   ];
 
   return (
-    <section className="px-4 py-16 bg-gradient-to-b text-gray-800 bg-gray-100 mx-auto ">
+    <section className="px-4 py-16 bg-gradient-to-b text-gray-800 bg-gray-100 mx-auto">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Sobre mí

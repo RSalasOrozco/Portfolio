@@ -18,40 +18,18 @@ const projectsData: Project[] = [
   {
     id: 1,
     title: "E-commerce App",
-    description:
-      "Plataforma de comercio electrónico con carrito de compras y pasarela de pago.",
-    images: [
-      "/images/ecommerce-1.jpg",
-      "/images/ecommerce-2.jpg",
-      "/images/ecommerce-3.jpg"
-    ],
-    technologies: ["React", "Next.js", "Stripe", "Tailwind CSS"],
-    projectLink: "https://example.com/ecommerce"
+    description: "Plataforma de comercio electrónico con carrito de compras.",
+    images: ["/1.png", "/2.png", "/3.png"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    projectLink: "https://github.com/RSalasOrozco/EcomerceTecnologico"
   },
   {
     id: 2,
     title: "Portfolio Personal",
     description: "Sitio web personal mostrando proyectos y habilidades.",
-    images: [
-      "/images/portfolio-1.jpg",
-      "/images/portfolio-2.jpg",
-      "/images/portfolio-3.jpg"
-    ],
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    images: ["/portfolio-1.jpg", "/portfolio-2.jpg", "/portfolio-3.jpg"],
+    technologies: ["Next.js", "Emailjs", "TypeScript", "Tailwind CSS"],
     projectLink: "https://example.com/portfolio"
-  },
-  {
-    id: 3,
-    title: "App de Tareas",
-    description:
-      "Aplicación de gestión de tareas con autenticación de usuarios.",
-    images: [
-      "/images/tasks-1.jpg",
-      "/images/tasks-2.jpg",
-      "/images/tasks-3.jpg"
-    ],
-    technologies: ["React", "Firebase", "Material-UI"],
-    projectLink: "https://example.com/tasks"
   }
 ];
 
@@ -66,6 +44,7 @@ export default function ProjectCards() {
 
   const closeLightbox = () => {
     setSelectedProject(null);
+    setCurrentImageIndex(0);
   };
 
   const nextImage = () => {
@@ -87,8 +66,8 @@ export default function ProjectCards() {
   };
 
   return (
-    <div className=" bg-gray-100 mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+    <div className="px-4 py-16 bg-gradient-to-b text-gray-800 bg-gray-100 mx-auto">
+      <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">
         Mis Proyectos
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -106,8 +85,8 @@ export default function ProjectCards() {
                 <Image
                   src={project.images[0]}
                   alt={project.title}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style={{ objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <span className="text-white text-lg font-semibold">
@@ -145,7 +124,7 @@ export default function ProjectCards() {
           <div className="relative max-w-4xl w-full">
             <button
               onClick={closeLightbox}
-              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors duration-300"
+              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors duration-300 z-10"
             >
               <X size={24} />
             </button>
@@ -155,8 +134,8 @@ export default function ProjectCards() {
                 alt={`${selectedProject.title} - Image ${
                   currentImageIndex + 1
                 }`}
-                layout="fill"
-                objectFit="contain"
+                fill
+                style={{ objectFit: "contain" }}
               />
             </div>
             <div className="absolute inset-y-0 left-0 flex items-center">
