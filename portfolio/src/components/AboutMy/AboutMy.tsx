@@ -1,5 +1,5 @@
 import React from "react";
-import { Code, Coffee, Lightbulb, Rocket } from "lucide-react";
+import { Code, Coffee, GraduationCap, Lightbulb, Rocket } from "lucide-react";
 import ContactameAqui from "../Buttons/Buttons";
 
 export default function AboutMy() {
@@ -71,7 +71,7 @@ export default function AboutMy() {
                 Innovación Constante
               </h4>
               <p className="text-gray-600 text-lg">
-                Siempre estoy al día con las últimas tendencias y tecnologías en
+                Procuro estar al día con las últimas tendencias y tecnologías en
                 desarrollo frontend.
               </p>
             </div>
@@ -79,7 +79,7 @@ export default function AboutMy() {
               <Code className="text-green-500 mb-4" size={32} />
               <h4 className="text-xl font-semibold mb-2">Código Limpio</h4>
               <p className="text-gray-600 text-lg">
-                Me enorgullezco de escribir código limpio, eficiente y fácil de
+                Me esfuerzo por escribir código limpio, eficiente y fácil de
                 mantener.
               </p>
             </div>
@@ -99,7 +99,7 @@ export default function AboutMy() {
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <Lightbulb className="text-yellow-500 mb-4" size={32} />
+              <GraduationCap className="text-yellow-500 mb-4" size={32} />
               <h4 className="text-xl font-semibold mb-2">Soy HENRY</h4>
               <p className="text-gray-600 text-lg">
                 Completé un bootcamp intensivo de desarrollo web full stack, con
@@ -107,22 +107,6 @@ export default function AboutMy() {
                 en HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, Vite y
                 Next.js, desarrollando aplicaciones web responsivas, optimizadas
                 y de alto rendimiento.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <Code className="text-green-500 mb-4" size={32} />
-              <h4 className="text-xl font-semibold mb-2">Código Limpio</h4>
-              <p className="text-gray-600 text-lg">
-                Me enorgullezco de escribir código limpio, eficiente y fácil de
-                mantener.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <Rocket className="text-red-500 mb-4" size={32} />
-              <h4 className="text-xl font-semibold mb-2">Resultados Rápidos</h4>
-              <p className="text-gray-600 text-lg">
-                Creo proyectos de alta calidad en tiempos idoneos y sin
-                comprometer la calidad.
               </p>
             </div>
           </div>

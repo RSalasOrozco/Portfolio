@@ -27,9 +27,9 @@ const projectsData: Project[] = [
     id: 2,
     title: "Portfolio Personal",
     description: "Sitio web personal mostrando proyectos y habilidades.",
-    images: ["/portfolio-1.jpg", "/portfolio-2.jpg", "/portfolio-3.jpg"],
+    images: ["/PF1.png", "/PF2.png", "/PF3.png"],
     technologies: ["Next.js", "Emailjs", "TypeScript", "Tailwind CSS"],
-    projectLink: "https://example.com/portfolio"
+    projectLink: "https://github.com/RSalasOrozco/Portfolio"
   }
 ];
 
