@@ -16,7 +16,7 @@ const Footer: FC<FooterProps> = () => {
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link
-              href="https://github.com"
+              href="https://github.com/RSalasOrozco"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-600 transition-colors"
@@ -36,7 +36,7 @@ const Footer: FC<FooterProps> = () => {
               </svg>
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="www.linkedin.com/in/rodolfo-de-las-salas-7b98022a4"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-600 transition-colors"
