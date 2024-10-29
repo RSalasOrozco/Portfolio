@@ -36,7 +36,7 @@ const Footer: FC<FooterProps> = () => {
               </svg>
             </Link>
             <Link
-              href="www.linkedin.com/in/rodolfo-de-las-salas-7b98022a4"
+              href="http://www.linkedin.com/in/rodolfo-de-las-salas-7b98022a4"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-600 transition-colors"
