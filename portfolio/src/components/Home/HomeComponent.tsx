@@ -92,7 +92,7 @@ export default function Home() {
           whileTap={{ scale: 0.95 }}
           className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold flex items-center"
         >
-          Ver Proyectos
+          Conoceme
           <ArrowRight className="ml-2" />
         </motion.button>
       </motion.div>
