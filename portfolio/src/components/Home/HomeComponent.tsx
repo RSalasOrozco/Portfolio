@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Code, Layout, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -92,7 +93,7 @@ export default function Home() {
           whileTap={{ scale: 0.95 }}
           className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold flex items-center"
         >
-          Conoceme
+          <Link href="/SobreMi">Conoceme</Link>
           <ArrowRight className="ml-2" />
         </motion.button>
       </motion.div>

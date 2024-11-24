@@ -11,9 +11,9 @@ export default function AboutMy() {
     "HTML5",
     "CSS3",
     "Tailwind CSS",
-    "MySQL",
     "Git",
-    "Figma"
+    "Figma",
+    "PosgreSQL"
   ];
 
   return (
@@ -25,17 +25,15 @@ export default function AboutMy() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-600 text-justify">
-              Hola, soy Rodolfo, un apasionado desarrollador frontend con un ojo
-              para el diseño y una mente para el código. Con más de 1 año de
-              experiencia, me caracterizo por crear paginas web atractivas y
-              altamente funcionales.
+              Hola, soy Rodolfo, un apasionado desarrollador frontend. Con más
+              de 1 año de experiencia en el desarrollo web, me caracterizo por
+              crear paginas web atractivas y altamente funcionales.
             </p>
             <p className="text-lg text-gray-600 text-justify">
               Mi enfoque se centra en la construcción de interfaces de usuario
               intuitivas y responsivas que no solo se ven geniales, sino que
               también ofrecen un rendimiento excepcional. Siempre estoy buscando
-              nuevas formas de empujar los límites de lo que es posible en el
-              navegador.
+              nuevas formas de mejorar mis habilidades y tecnologías.
             </p>
             <div className="flex space-x-4">
               <Coffee className="text-blue-500" size={24} />
