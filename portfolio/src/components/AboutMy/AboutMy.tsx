@@ -25,9 +25,9 @@ export default function AboutMy() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-600 text-justify">
-              Hola, soy Rodolfo, un apasionado desarrollador frontend. Con más
-              de 1 año de experiencia en el desarrollo web, me caracterizo por
-              crear paginas web atractivas y altamente funcionales.
+              Hola, soy Rodolfo, un apasionado desarrollador frontend. Con
+              experiencia en el desarrollo web, me caracterizo por crear paginas
+              web atractivas y altamente funcionales.
             </p>
             <p className="text-lg text-gray-600 text-justify">
               Mi enfoque se centra en la construcción de interfaces de usuario
