@@ -30,6 +30,15 @@ const projectsData: Project[] = [
     images: ["/PF1.png", "/PF2.png", "/PF3.png"],
     technologies: ["Next.js", "Emailjs", "TypeScript", "Tailwind CSS"],
     projectLink: "https://github.com/RSalasOrozco/Portfolio"
+  },
+  {
+    id: 3,
+    title: "Turnero Peluquería",
+    description:
+      "Sitio web de una peluqueria que tiene la funcionalidad de agendar citas.",
+    images: ["/pl1.png", "/pl2.png", "/pl3.png ", "/pl4.png"],
+    technologies: ["Wordpress"],
+    projectLink: "https://github.com/RSalasOrozco/Portfolio"
   }
 ];
 

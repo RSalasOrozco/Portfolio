@@ -13,7 +13,9 @@ export default function AboutMy() {
     "Tailwind CSS",
     "Git",
     "Figma",
-    "PosgreSQL"
+    "PosgreSQL",
+    "Bootstrap",
+    "WordPress"
   ];
 
   return (
@@ -105,6 +107,21 @@ export default function AboutMy() {
                 en HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, Vite y
                 Next.js, desarrollando aplicaciones web responsivas, optimizadas
                 y de alto rendimiento.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <GraduationCap className="text-yellow-500 mb-4" size={32} />
+              <h4 className="text-xl font-semibold mb-2">
+                Desarrollador Autodidacta
+              </h4>
+              <p className="text-gray-600 text-lg">
+                Desarrollador web full stack formado de manera autodidacta,
+                especializado en frontend. Mis habilidades incluyen HTML, CSS,
+                JavaScript (Vite, Next.js) y frameworks como Tailwind y
+                Bootstrap. También tengo experiencia en WordPress, habiendo
+                creado sitios personalizados y optimizados. Mi enfoque combina
+                tecnologías modernas con soluciones CMS según las necesidades
+                del proyecto.
               </p>
             </div>
           </div>
