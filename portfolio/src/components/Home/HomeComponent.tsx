@@ -61,7 +61,6 @@ export default function Home() {
           <motion.div
             key={index}
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
             className="bg-white p-6 rounded-lg shadow-lg text-center"
           >
             <motion.div
@@ -74,7 +73,6 @@ export default function Home() {
                 damping: 20
               }}
             >
-              {/* ✅ CORREGIDO: text-blue-700 (mucho más contraste) */}
               <item.icon className="w-12 h-12 mx-auto text-blue-700 mb-4" />
             </motion.div>
             <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
@@ -91,9 +89,7 @@ export default function Home() {
       >
         <motion.button
           whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          // ✅ CORREGIDO: bg-blue-700 (excelente contraste)
-          className="bg-blue-700 text-white px-6 py-3 rounded-full font-semibold flex items-center hover:bg-blue-800 transition-colors"
+          className="bg-blue-700 text-white px-6 py-3 rounded-full font-semibold flex items-center hover:bg-blue-800 transition-colors cursor-pointer"
         >
           <Link href="/SobreMi">Conoceme</Link>
           <ArrowRight className="ml-2" />
