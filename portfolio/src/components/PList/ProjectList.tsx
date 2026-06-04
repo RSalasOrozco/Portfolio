@@ -33,12 +33,30 @@ const projectsData: Project[] = [
   },
   {
     id: 3,
-    title: "Turnero Peluquería",
+    title: "Turnero Peluquería - wordpress",
     description:
-      "Sitio web de una peluqueria que tiene la funcionalidad de agendar citas.",
+      "Sitio web de una peluqueria que tiene la funcionalidad de agendar citas.Toda su funcionalidad esta desarrollada en wordpress.",
     images: ["/pl1.png", "/pl2.png", "/pl3.png ", "/pl4.png"],
     technologies: ["Wordpress"],
     projectLink: "https://github.com/RSalasOrozco/Portfolio"
+  },
+  {
+    id: 4,
+    title: "Turnero Peluquería - Next.js",
+    description:
+      "Sitio web de una peluqueria que tiene la funcionalidad de agendar citas. El administrador puede gestionar las citas y los clientes pueden agendarlas. Toda su funcionalidad esta desarrollada en Next.js.",
+    images: [
+      "/pln1.png",
+      "/pln2.png",
+      "/pln3.png",
+      "/pln4.png",
+      "/pln5.png",
+      "/pln6.png",
+      "/pln7.png",
+      "/pln8.png"
+    ],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    projectLink: "https://github.com/RSalasOrozco/barbershop-app"
   }
 ];
 

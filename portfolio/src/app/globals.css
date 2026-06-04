@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* src/app/globals.css */
+html,
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+body {
+  background-color: #f3f4f6; /* o el color de fondo que uses normalmente */
+}
+
+/* Asegura que el main y las páginas también tengan el mismo fondo */
+main,
+main > div,
+main > section {
+  background-color: inherit;
 }
