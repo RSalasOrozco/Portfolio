@@ -74,7 +74,8 @@ export default function Home() {
                 damping: 20
               }}
             >
-              <item.icon className="w-12 h-12 mx-auto text-blue-500 mb-4" />
+              {/* ✅ CORREGIDO: text-blue-700 (mucho más contraste) */}
+              <item.icon className="w-12 h-12 mx-auto text-blue-700 mb-4" />
             </motion.div>
             <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
             <p className="text-gray-600">{item.description}</p>
@@ -91,7 +92,8 @@ export default function Home() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold flex items-center"
+          // ✅ CORREGIDO: bg-blue-700 (excelente contraste)
+          className="bg-blue-700 text-white px-6 py-3 rounded-full font-semibold flex items-center hover:bg-blue-800 transition-colors"
         >
           <Link href="/SobreMi">Conoceme</Link>
           <ArrowRight className="ml-2" />
