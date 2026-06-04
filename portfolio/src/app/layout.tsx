@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import WhatsAppButton from "../components/WhatsAppButton/WhatsAppButton"; // Importa el botón
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <WhatsAppButton /> {/* Agrega el botón aquí */}
       </body>
     </html>
   );

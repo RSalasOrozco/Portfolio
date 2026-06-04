@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
       form.current?.elements.namedItem("message") as HTMLTextAreaElement
     )?.value;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=+573188666122&text=Hola,%20vi%20tu%20Porfolio%20soy%20${encodeURIComponent(
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=573011366424&text=Hola,%20vi%20tu%20portfolio%20y%20me%20gustaría%20contactarte${encodeURIComponent(
       name
     )},%20mi%20correo%20es%20${encodeURIComponent(
       email
