@@ -1,8 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
-
 export default function WhatsAppButton() {
   const whatsappUrl =
     "https://api.whatsapp.com/send?phone=573011366424&text=Hola,%20vi%20tu%20portfolio%20y%20me%20gustaría%20contactarte";

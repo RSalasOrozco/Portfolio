@@ -36,7 +36,7 @@ const projectsData: Project[] = [
     title: "Turnero Peluquería - wordpress",
     description:
       "Sitio web de una peluqueria que tiene la funcionalidad de agendar citas.Toda su funcionalidad esta desarrollada en wordpress.",
-    images: ["/pl1.png", "/pl2.png", "/pl3.png ", "/pl4.png"],
+    images: ["/pl1.png", "/pl2.png", "/pl3.png", "/pl4.png"],
     technologies: ["Wordpress"],
     projectLink: "https://github.com/RSalasOrozco/Portfolio"
   },
