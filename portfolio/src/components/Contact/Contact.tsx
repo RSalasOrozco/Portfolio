@@ -3,6 +3,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Send, Smartphone } from "lucide-react";
+import { getWhatsAppUrl } from "@/lib/constants";
 
 const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
@@ -15,10 +16,10 @@ const Contact: React.FC = () => {
 
     emailjs
       .sendForm(
-        "service_r1quzvk", // Reemplaza con tu ID de servicio
-        "template_e295d85", // Reemplaza con tu ID de plantilla
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
         form.current as HTMLFormElement,
-        "EKg6KNU8_h_ELVlVT" // Reemplaza con tu clave pública
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
       )
       .then(
         () => {
@@ -44,11 +45,9 @@ const Contact: React.FC = () => {
       form.current?.elements.namedItem("message") as HTMLTextAreaElement
     )?.value;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=573011366424&text=Hola,%20vi%20tu%20portfolio%20y%20me%20gustaría%20contactarte${encodeURIComponent(
-      name
-    )},%20mi%20correo%20es%20${encodeURIComponent(
-      email
-    )}.%20${encodeURIComponent(message)}`;
+    const whatsappUrl = getWhatsAppUrl(
+      `Hola, vi tu portfolio y me gustaría contactarte${name}, mi correo es ${email}. ${message}`
+    );
 
     window.open(whatsappUrl, "_blank");
   };

@@ -17,9 +17,12 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Mi Portfolio",
+  title: {
+    default: "Rodolfo De Las Salas | Frontend Developer",
+    template: "%s | Rodolfo De Las Salas"
+  },
   description:
-    "Mi Portfolio donde aplico conocimientos adquiridos en el área del Frontend."
+    "Portafolio de Rodolfo De Las Salas, desarrollador frontend especializado en React, Next.js y TypeScript. Descubre mis proyectos, habilidades y cómo contactarme."
 };
 
 export default function RootLayout({
@@ -28,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="es" className="h-full">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-full flex flex-col`}
       >

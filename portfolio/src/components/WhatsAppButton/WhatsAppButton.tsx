@@ -1,8 +1,11 @@
 "use client";
 
+import { getWhatsAppUrl } from "@/lib/constants";
+
 export default function WhatsAppButton() {
-  const whatsappUrl =
-    "https://api.whatsapp.com/send?phone=573011366424&text=Hola,%20vi%20tu%20portfolio%20y%20me%20gustaría%20contactarte";
+  const whatsappUrl = getWhatsAppUrl(
+    "Hola, vi tu portfolio y me gustaría contactarte"
+  );
 
   return (
     <a
