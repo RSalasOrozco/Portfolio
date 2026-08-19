@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { Send, Smartphone } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/constants";
 
@@ -10,28 +9,43 @@ const Contact: React.FC = () => {
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
+    setStatusMessage(null);
 
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
-        form.current as HTMLFormElement,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
-      )
-      .then(
-        () => {
-          setStatusMessage("¡Mensaje enviado con éxito!");
-          setIsLoading(false);
-          form.current?.reset(); // Limpia el formulario
-        },
-        (error) => {
-          setStatusMessage(`Hubo un error: ${error.text}`);
-          setIsLoading(false);
-        }
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: (
+            form.current?.elements.namedItem("user_name") as HTMLInputElement
+          )?.value,
+          email: (
+            form.current?.elements.namedItem("user_email") as HTMLInputElement
+          )?.value,
+          message: (
+            form.current?.elements.namedItem("message") as HTMLTextAreaElement
+          )?.value
+        })
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Hubo un error al enviar el mensaje.");
+      }
+
+      setStatusMessage("¡Mensaje enviado con éxito!");
+      form.current?.reset();
+    } catch (error) {
+      setStatusMessage(
+        error instanceof Error ? error.message : "Hubo un error al enviar el mensaje."
       );
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const sendWhatsAppMessage = () => {
